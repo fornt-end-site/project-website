@@ -183,15 +183,6 @@
 
 
 
-    /* .boxs .box {
-        padding: 0px 26px;
-        font-size: 28px;
-        width: 25%;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } */
 
     #box-1 {
         background-color: #314d52;
@@ -356,9 +347,6 @@
             padding: 10px;
         }
 
-
-
-
     }
 
 
@@ -370,10 +358,6 @@
 
     /* <!------main-container-start----------------------> */
 
-    /* main {
-       border: 5px solid black;
-       margin: 10px;
-       } */
 
     .container {
         display: flex;
