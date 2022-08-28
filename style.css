@@ -43,9 +43,11 @@
         display: block;
         font-size: 20px;
     }
-    .navbar .menu ul li a.active{
+
+    .navbar .menu ul li a.active {
         background-color: #6a6a6a;
     }
+
     .navbar .menu ul li a:hover {
         background-color: #6a6a6a;
     }
@@ -139,7 +141,7 @@
         }
 
         header .header-text p {
-            font-size: 15px;
+            font-size: 12px;
         }
 
         header .header-text h1 {
@@ -150,15 +152,38 @@
     /*-------------------boxs--starts----------------*/
 
     .boxs {
-        display: flex;
-        margin-top: 5px;
-        /* padding: 0px 10px; */
-        height: 40vh;
-        color: white;
         background-color: #3d3a3a;
+        display: flex;
+        width: 100%;
+        height: 215px;
+        margin-top: 5px;
+        color: rgb(250, 250, 250);
+
+        /* border: 2px solid rgb(229, 0, 0); */
+    }
+
+    .boxs .fisrt-box,
+    .second-box {
+        width: 50%;
+        display: flex;
+        font-size: 28px;
+        text-align: left;
+        /* border: 2px solid rgb(40, 97, 53); */
     }
 
     .boxs .box {
+        margin: 0%;
+        width: 50%;
+        padding: 20px;
+
+        /* border: 2px solid rgb(238, 246, 4); */
+    }
+
+    /* -----------break-------------- */
+
+
+
+    /* .boxs .box {
         padding: 0px 26px;
         font-size: 28px;
         width: 25%;
@@ -166,7 +191,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
 
     #box-1 {
         background-color: #314d52;
@@ -225,18 +250,27 @@
     }
 
     /* -------box------media-qurie---start-------------------- */
-    @media (max-width:684px) {
+    @media (max-width:1000px) {
+
+        #box-1,
+        #box-3 {
+            font-size: 25px;
+        }
+
+    }
+
+    @media (max-width:746px) {
 
         .boxs .box {
             font-size: 22px;
-            width: 25%;
+            width: 50%;
             text-align: center;
         }
 
         .boxs .box .start-btn-1 {
             font-size: 10px;
             width: 100px;
-            margin-top: 10px;
+            margin-top: 10px auto;
 
         }
 
@@ -251,6 +285,83 @@
             width: 100px;
         }
     }
+
+
+    @media (max-width:619px) {
+
+        .boxs {
+
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .boxs .fisrt-box,
+        .second-box {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .boxs .box {
+
+            margin: 5px;
+            width: 50%;
+            padding: 20px;
+
+            /* border: 2px solid rgb(238, 246, 4); */
+        }
+
+        .boxs .start-btn-1,
+        .start-btn-2 {
+            margin: 10px auto;
+        }
+
+        main .container {
+
+            display: inline-block;
+        }
+
+        .container .text-1 {
+
+            text-align: center;
+
+        }
+
+        .container-2 .content-box {
+            margin: 13px 15px;
+
+        }
+
+        .social-media {
+            top: 66px;
+        }
+
+        .col {
+            margin: 35px 0px;
+        }
+
+        .container-5 {
+            display: inline-block;
+        }
+    }
+
+    @media (max-width:360px) {
+        .header-text p {
+            font-size: 13px;
+        }
+
+        #box-1,
+        #box-3 {
+            padding: 10px;
+        }
+
+
+
+
+    }
+
+
 
     /*-----main---start----------------------*/
 
@@ -273,7 +384,7 @@
     }
 
     .container .text-1 {
-        width: 50%;
+        width: 100%;
 
     }
 
@@ -287,11 +398,11 @@
 
     .container .text-2 {
         position: relative;
-        width: 50%;
+        width: 100%;
         padding-top: 10px 10px;
         height: 50%;
         top: 40px;
-        left: -10px;
+
 
         /* border: 2px solid black; */
     }
@@ -424,12 +535,24 @@
     /* -------container-text-----media-qurie---start-------------------- */
 
     @media (max-width:738px) {
+
         .container-text a {
             width: 90px;
             font-size: 11px;
         }
 
+        .container .img {
+            width: 100%;
+            left: 10px;
+        }
+
+        .container-text {
+            width: 100%;
+        }
+
     }
+
+
 
 
     /* -----------container-2-----start---------------------------------------------- */
@@ -513,6 +636,38 @@
         width: 70%;
         height: 70%;
         box-shadow: 13px -11px 40px #302e2e;
+
+    }
+
+    /* media qurie start */
+    @media (max-width:738px) {
+
+        .container {
+            display: inline-block;
+        }
+
+        .container-text a {
+            width: 90px;
+            font-size: 11px;
+        }
+
+        .container .img {
+            width: 100%;
+            left: 10px;
+        }
+
+        .container-text {
+            width: 100%;
+        }
+
+        .container-3 .container .img {
+            width: 100%;
+        }
+
+        .container-3 .container .img img {
+            width: 90%;
+            height: 80%;
+        }
 
     }
 
@@ -661,7 +816,31 @@
         font-weight: bold;
     }
 
+    @media (max-width:1000px) {
+
+
+
+        .container-5 {
+            display: inline-block;
+            margin: 0px 77px;
+
+        }
+
+        .container-5 .video {
+            width: 100%;
+        }
+
+        .container-5 .video video {
+            margin: 95px 0px;
+        }
+
+        .container-5 .texts {
+            width: 100%;
+        }
+    }
+
     /*--End----container-5------------ */
+
     /*-------------footer--start-----*/
     .footer .section {
         padding: 20px;
@@ -750,6 +929,26 @@
     }
 
 
+
+
+    @media (max-width:750px) {
+
+        .footer .section {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .footer .section .message {
+            width: 100%;
+            margin: 30px 0px;
+
+        }
+
+    }
+
+    .container-2 .content-box {
+        margin: 13px 15px;
+    }
 
 
     /*------------------------end-----------------------*/
